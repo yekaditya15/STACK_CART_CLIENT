@@ -1,0 +1,84 @@
+/* Add these styles to your CartStyles.css file or equivalent */
+
+/* Container styles */
+.cart-page {
+  padding: 20px;
+}
+
+/* Product details styles */
+.cart-page .row.card {
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin: 10px;
+}
+
+.cart-page .row.card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.cart-page .row.card p {
+  margin-bottom: 10px;
+}
+
+.cart-page .cart-remove-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cart-page .quantity-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.cart-page .quantity-container button {
+  margin: 0 5px;
+}
+
+/* Cart summary styles */
+.cart-summary {
+  padding: 20px;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+}
+
+.cart-summary h2 {
+  margin-bottom: 20px;
+}
+
+.cart-summary hr {
+  margin: 15px 0;
+}
+
+.cart-summary h4 {
+  margin-bottom: 20px;
+}
+
+.cart-summary h5 {
+  margin-bottom: 10px;
+}
+
+.cart-summary button {
+  margin-top: 10px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .cart-page .row {
+    flex-direction: column;
+    align-content: center;
+    margin: 10px;
+  }
+
+  .cart-page .col-md-7,
+  .cart-page .col-md-5 {
+    width: 100%;
+  }
+
+  .cart-summary {
+    margin: 0px;
+  }
+}

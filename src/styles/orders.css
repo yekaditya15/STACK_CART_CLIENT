@@ -1,0 +1,70 @@
+/* General styles */
+.dashboard {
+  background-color: #f8f9fa; /* Light gray background color */
+}
+
+/* Order container styles */
+.border.shadow {
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #dee2e6; /* Light border color */
+  border-radius: 5px;
+  background-color: #fff; /* White background color */
+}
+
+/* Table styles */
+.table-container {
+  margin-bottom: 20px;
+}
+
+.table {
+  width: 100%;
+  margin-bottom: 1rem;
+  color: #212529; /* Default text color */
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: 0.75rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6; /* Light border color */
+}
+
+.table thead th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #dee2e6; /* Light border color */
+}
+
+.table tbody + tbody {
+  border-top: 2px solid #dee2e6; /* Light border color */
+}
+
+/* Show only Status and Payment columns on small screens */
+/* Show only Status and Payment columns on small screens */
+@media (max-width: 767.98px) {
+  .table th:not(:first-child):not(:nth-child(2)):not(:nth-child(5)),
+  .table td:not(:first-child):not(:nth-child(2)):not(:nth-child(5)) {
+    display: none;
+  }
+}
+
+/* Product container styles */
+.card.flex-row {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #dee2e6; /* Light border color */
+  border-radius: 5px;
+  background-color: #fff; /* White background color */
+}
+
+/* Responsive styles for images */
+.card-img-top {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Optional: Styles for specific elements */
+h1.text-center {
+  color: #007bff; /* Bootstrap primary color */
+}

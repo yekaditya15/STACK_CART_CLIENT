@@ -1,0 +1,10 @@
+/* Add this CSS to your existing stylesheet or create a new one */
+.btn-upload-photo {
+  background-color: #007bff; /* Set your desired background color */
+  color: #fff; /* Set the text color */
+  border: none;
+}
+
+.btn-upload-photo:hover {
+  background-color: #0056b3; /* Set a darker shade for the hover effect */
+}

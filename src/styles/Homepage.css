@@ -1,0 +1,270 @@
+/* General Styles */
+.banner-img {
+  width: 100%;
+  margin-top: -55px;
+}
+
+.home-page h1 {
+  color: gray;
+  font-family: "Playfair Display", serif;
+}
+
+.home-page {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Product Card Styles */
+.home-page .card,
+.product-details .card {
+  width: 330px; /* Adjust the width according to your preference */
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s, transform 0.3s;
+  margin-bottom: 20px;
+}
+
+.home-page .card:hover,
+.product-details .card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+  background-color: #f8f8f8; /* Lighter background on hover */
+}
+
+.home-page .card-img-top,
+.product-details .card-img-top {
+  height: 300px;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.home-page .card-body,
+.product-details .card-body {
+  padding: 10px;
+}
+
+.home-page .card-name-price,
+.product-details .card-name-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.home-page .card-title,
+.product-details .card-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+}
+
+.home-page .card-price,
+.product-details .card-price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #27ae60;
+}
+
+.home-page .card-text,
+.product-details .card-text {
+  color: #555;
+}
+
+/* Improved styles for buttons */
+.home-page .btn-info,
+.home-page .btn-dark,
+.home-page .filters button,
+.home-page .filters .btn-danger,
+.product-details .btn-info,
+.product-details .btn-dark,
+.product-details .filters button,
+.product-details .filters .btn-danger {
+  width: 50%;
+  padding: 12px 20px; /* Adjusted padding for a more comfortable button size */
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.home-page .btn-info,
+.product-details .btn-info {
+  background-color: #3498db;
+  color: #fff;
+}
+
+.home-page .btn-info:hover,
+.product-details .btn-info:hover {
+  background-color: #2980b9;
+}
+
+.home-page .btn-dark,
+.product-details .btn-dark {
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+.home-page .btn-dark:hover,
+.product-details .btn-dark:hover {
+  background-color: #c0392b;
+}
+
+.home-page .filters button,
+.product-details .filters button {
+  background-color: #ff9900;
+  color: #fff;
+}
+
+.home-page .filters button:hover,
+.product-details .filters button:hover {
+  background-color: #e5830c;
+}
+
+/* Filters Section Styles */
+.home-page .filters,
+.product-details .filters {
+  background-color: #f3f3f3;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.home-page .filters h4,
+.product-details .filters h4 {
+  margin-top: 20px;
+  color: #333333 !important;
+  border-bottom: 2px solid #dddddd;
+  transition: color 0.3s;
+}
+
+.home-page .filters h4:hover,
+.product-details .filters h4:hover {
+  color: #ff9900;
+  font-weight: bold;
+}
+
+.home-page .ant-checkbox-wrapper,
+.home-page .ant-radio-wrapper,
+.product-details .ant-checkbox-wrapper,
+.product-details .ant-radio-wrapper {
+  margin: 8px 0;
+}
+
+.home-page .filters .ant-collapse-header,
+.product-details .filters .ant-collapse-header {
+  font-weight: bold;
+}
+
+/* Load more button styles */
+.home-page .loadmore-container,
+.product-details .loadmore-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.home-page .loadmore,
+.product-details .loadmore {
+  background-color: #4caf50;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px; /* Adjusted font size for better context */
+  border: 2px solid #4caf50;
+  padding: 10px 20px; /* Adjusted padding for better context */
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: auto; /* Set width to auto to prevent it from taking 100% width */
+}
+
+.home-page .loadmore:hover,
+.product-details .loadmore:hover {
+  background-color: #45a049;
+  border-color: #45a049;
+}
+
+/* Reset button styles */
+.home-page .filters .btn-danger,
+.product-details .filters .btn-danger {
+  background-color: #dc3545;
+  color: #fff;
+  width: 100%;
+  border: none;
+  border-radius: 0;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .banner-img {
+    width: 100%;
+    margin-top: -10px;
+  }
+
+  .home-page .card,
+  .product-details .card {
+    width: 100%; /* Set the width to 100% for full-width cards */
+    margin-left: 20px; /* Add some bottom margin for spacing */
+  }
+
+  .home-page .filters,
+  .product-details .filters {
+    background-color: #f3f3f3;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 10px; /* Remove left margin */
+  }
+
+  .home-page .filters h4,
+  .product-details .filters h4 {
+    margin-top: 20px;
+    color: #333333 !important;
+    border-bottom: 2px solid #dddddd;
+    transition: color 0.3s;
+    margin-left: 10px; /* Add left margin for better spacing */
+  }
+}
+
+/* Homepage.css */
+
+/* Add styles for the Amazon-like buttons */
+.amazon-btn {
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.amazon-btn:hover {
+  background-color: hwb(214 33% 5%); /* Amazon orange color on hover */
+  color: #fff; /* Text color on hover */
+}
+
+/* Add specific styles for the "More Details" button */
+.more-details-btn {
+  background-color: #006400; /* Amazon button background color */
+  color: rgba(252, 250, 250, 0.97); /* Amazon button text color */
+  border: 1px solid hsl(0, 88%, 29%); /* Border color */
+}
+
+/* Add specific styles for the "Add to Cart" button */
+.add-to-cart-btn {
+  background-color: #ff9900; /* Amazon orange color */
+  color: #fff; /* Text color */
+  border: 1px solid #ff9900; /* Border color */
+}
+
+.add-to-cart-btn:hover {
+  background-color: #e68a00; /* Darker orange color on hover */
+  border: 1px solid #e68a00; /* Darker border color on hover */
+  color: #fff; /* Text color on hover */
+}

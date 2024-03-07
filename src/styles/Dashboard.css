@@ -1,0 +1,10 @@
+@media only screen and (max-width: 767px) {
+  .row {
+    flex-direction: column; /* Stack columns on top of each other on mobile */
+  }
+
+  .col-md-3,
+  .col-md-9 {
+    width: 100%; /* Make both columns take full width on mobile */
+  }
+}

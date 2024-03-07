@@ -1,0 +1,21 @@
+/* PolicyStyles.css */
+
+.policy-container {
+  padding: 40px 0;
+}
+
+.policy-image {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.policy-text {
+  padding: 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .policy-image {
+    border-radius: 8px 8px 0 0;
+  }
+}

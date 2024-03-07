@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* font-family: 'Poppins', sans-serif; */
+/* font-family: 'Playfair Display', serif; */
+
+/* //navbar css */
+/* Reset some default Bootstrap styles for the navbar */
+/* Navbar background color and styling */
+.navbar {
+  background-color: #232f3e; /* Amazon's navbar background color */
+  color: #fff;
+}
+
+/* Navbar brand styling */
+.navbar-brand {
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 1px;
+  font-size: 24px; /* Increase font size for the brand */
+  color: #fff; /* Brand text color */
+}
+
+/* Navbar links styling */
+.navbar-nav .nav-link {
+  color: #fff;
+  padding: 10px 15px;
+  transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #f90; /* Amazon's link color on hover */
+  background-color: transparent; /* Remove default Bootstrap background color */
+}
+
+/* Active link styling */
+.navbar-nav .nav-item .nav-link .ant-badge {
+  background-color: transparent; /* Set background color to transparent */
+  color: #f90; /* Set text color to Amazon's link color */
+  box-shadow: none; /* Remove any box shadow */
+}
+
+/* Dropdown menu styling */
+.navbar-nav .dropdown-menu {
+  background-color: #232f3e; /* Amazon's dropdown background color */
+  border: none;
+}
+
+/* Dropdown link styling */
+.navbar-nav .dropdown-menu .dropdown-item {
+  color: #fff;
+  padding: 10px 15px;
+  transition: background-color 0.3s;
+}
+
+.navbar-nav .dropdown-menu .dropdown-item:hover {
+  background-color: #434f61; /* Amazon's dropdown link background color on hover */
+}
+
+/* Cart badge styling */
+.navbar-nav .nav-item .nav-link .ant-badge {
+  color: #f90; /* Cart badge text color */
+}
+
+.search-form {
+  margin-top: 10px;
+  margin-right: 20px; /* Adjust margin */
+  display: flex; /* Align items in a row */
+}
+
+.search-form input {
+  border: 1px solid #f90; /* Amazon's search input border color */
+  border-radius: 5px; /* Adjust border-radius */
+  padding: 8px; /* Adjust padding */
+  font-size: 14px; /* Adjust font size */
+  height: 36px; /* Set equal height for input and button */
+}
+
+.search-form button {
+  background-color: #f90; /* Amazon's search button background color */
+  border: none;
+  border-radius: 5px; /* Adjust border-radius */
+  color: #fff; /* Button text color */
+  padding: 8px 16px; /* Adjust padding */
+  width: fit-content;
+
+  font-size: 14px; /* Adjust font size */
+  height: 36px; /* Set equal height for input and button */
+}
+
+/* Add this style for the hover effect on the search button */
+.search-form button:hover {
+  background-color: #d5800c; /* Adjust hover background color */
+}
+
+/* Add this style for the active link indicator */
+.active {
+  border-bottom: 2px solid #f90;
+}
+
+/* =============================
+==========footer============= */
+
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  color: hsl(0, 100%, 100%); /* Set text color to match header */
+  padding: 10px;
+  background: #232f3e; /* Set background color to match header */
+}
+
+/* Style for footer links */
+.footer a {
+  text-decoration: none;
+  color: #fff; /* Set link color to match header */
+  padding: 10px;
+}
+
+.footer a:hover {
+  color: #f90; /* Set link color on hover to match header */
+  border-bottom: 1px solid #f90; /* Set underline on hover to match header */
+}
+
+/* =================================
+======== page not found css ======= */
+.pnf {
+  display: flex;
+  min-height: 65vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.pnf-title {
+  font-size: 100px;
+  font-weight: 700;
+}
+
+.pnf-heading {
+  font-weight: normal;
+}
+
+.pnf-btn {
+  color: black;
+  border: 1px solid black;
+  text-decoration: none;
+  padding: 10px;
+  margin-top: 10px;
+}
+.pnf-btn:hover {
+  background-color: black;
+  color: white;
+}
+/* ========================================= */
+/* =========contact us ========= */
+.contactus {
+  margin: 0;
+  padding: 0;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ==================== */
+.product-link {
+  text-decoration: none !important;
+  color: black !important;
+}
+
+.cat-btn {
+  padding: 40px 0px;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+.cat-btn:hover {
+  background-color: #434343;
+  color: white;
+}
+/* ================
+====dashboard
+=================== */
+
+.dashboard {
+  margin-top: 100px !important;
+}
+
+.dashboard-menu h4 {
+  background-color: #434343 !important;
+  color: white;
+  padding: 20px 0px;
+}
+
+h1.text-center {
+  color: white;
+}

@@ -1,0 +1,23 @@
+/* Add this CSS to your existing stylesheet or create a new one */
+.product-link {
+  text-decoration: none;
+  color: #000;
+}
+
+@media (max-width: 767px) {
+  /* Adjust the max-width value according to your design needs */
+  .col-md-7 {
+    text-align: center;
+  }
+
+  .product-link {
+    display: block;
+    margin: 0 auto;
+    width: 50%; /* Adjust the width as needed */
+  }
+
+  .card {
+    margin-bottom: 10px;
+    width: 18rem; /* Adjust the card width as needed */
+  }
+}
