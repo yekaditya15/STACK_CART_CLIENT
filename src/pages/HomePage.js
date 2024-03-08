@@ -250,7 +250,7 @@ const HomePage = () => {
             ) : (
               <div className="text-center w-100">
                 <p style={{ fontWeight: "bold", textAlign: "center" }}>
-                  No products found.
+                  {loading ? "Loading..." : "No products found."}
                 </p>
               </div>
             )}
