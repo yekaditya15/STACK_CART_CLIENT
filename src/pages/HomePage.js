@@ -89,7 +89,6 @@ const HomePage = () => {
 
   const handleFilterCategory = (value) => {
     setChecked(value);
-    setRadio([]); // Clear the radio selection when a new category is selected
   };
 
   const handleFilterPrice = (value) => {
@@ -102,16 +101,20 @@ const HomePage = () => {
 
   useEffect(() => {
     if (checked.length || radio.length) filterProduct();
-  }, [checked, radio, page]);
+  }, [checked, radio]);
 
   const filterProduct = async () => {
     try {
       setFilterLoading(true);
       const { data } = await axios.post(
         API_BASE + "/api/v1/product/product-filters",
+
         {
           checked,
           radio,
+        },
+        {
+          withCredentials: true,
         }
       );
       setProducts(data?.products);
