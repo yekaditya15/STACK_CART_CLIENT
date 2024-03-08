@@ -86,21 +86,24 @@ const HomePage = () => {
       setLoading(false);
     }
   };
-
-  const handleFilterCategory = (value) => {
-    setChecked(value);
+  // Filter logic for category
+  const handleFilterCategory = (values) => {
+    setChecked(values);
   };
 
+  // Filter logic for price range
   const handleFilterPrice = (value) => {
     setRadio(value);
   };
 
   useEffect(() => {
-    if (!checked.length || !radio.length) getAllProducts();
-  }, [checked.length, radio.length]);
-
-  useEffect(() => {
-    if (checked.length || radio.length) filterProduct();
+    if (!checked.length && !radio.length) {
+      // If no filters applied, fetch all products
+      getAllProducts();
+    } else {
+      // If filters are applied, filter the products
+      filterProduct();
+    }
   }, [checked, radio]);
 
   const filterProduct = async () => {
@@ -108,7 +111,6 @@ const HomePage = () => {
       setFilterLoading(true);
       const { data } = await axios.post(
         API_BASE + "/api/v1/product/product-filters",
-
         {
           checked,
           radio,
