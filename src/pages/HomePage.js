@@ -86,6 +86,7 @@ const HomePage = () => {
       setLoading(false);
     }
   };
+
   // Filter logic for category
   const handleFilterCategory = (values) => {
     setChecked(values);
@@ -102,13 +103,14 @@ const HomePage = () => {
       getAllProducts();
     } else {
       // If filters are applied, filter the products
-      filterProduct();
+      filterProducts();
     }
   }, [checked, radio]);
 
-  const filterProduct = async () => {
+  const filterProducts = async () => {
     try {
       setFilterLoading(true);
+
       const { data } = await axios.post(
         API_BASE + "/api/v1/product/product-filters",
         {
@@ -119,6 +121,7 @@ const HomePage = () => {
           withCredentials: true,
         }
       );
+
       setProducts(data?.products);
     } catch (error) {
       console.log(error);
